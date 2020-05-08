@@ -1,0 +1,14 @@
+{
+  "name": "soliditycours",
+  "version": "1.0.0",
+  "description": "apprendre à coder en solidity",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "adriendarki",
+  "license": "ISC",
+  "dependencies": {
+    "solc": "^0.6.4"
+  }
+}
