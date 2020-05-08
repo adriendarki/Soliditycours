@@ -10,8 +10,3 @@ Solidity permet la rédaction de smart contract sur la blockchain Ethereum (eth)
 il est destinée à faire tournée les machine virtuel d'Ethereum  "Ethereum Virtual Machine (EVM)" Bien évidment il y a également des machine virtuel pour tron. Il est de type "statically typed" et prend en charge les héritages, les bibliothèques, et plus encore.
 En bref, il dispose de toutes les capacités nécessaires pour construire des applications de blockchains pour de puissance industrielle.
 
-
-Dans notre premier contrat nous allon voir comment retournée un "hello world"
-
-Pour cela je vais vous montrez comment on retour une valeur.
-dans le smartcontrat firstcontrat.sol vous allez voir une mauvaise maniere de proceder et dans value.sol la bonne maniere
