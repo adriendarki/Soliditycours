@@ -2,7 +2,7 @@ pragma solidity ^0.6.4;
 
 contract NameAll {
     uint256  public peopleCount = 0;
-   
+
     mapping(uint => Person) public people;
 
     struct Person {
