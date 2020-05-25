@@ -1,22 +1,22 @@
 # La base
 
-Dans notre premier contrat tu vas voir comment retourner un "hello world"
+Dans notre premier contrat  tu vas voir comment retourner un "hello world"
 
-Pour cela je vais te montrée comment on retour une valeur.
-Dans le smartcontrat firstcontrat.sol tu vois une mauvaise manière de procéder et dans value.sol la bonne manière.
+Pour cela je vais te montrer comment on retourne une valeur.
+Dans le smart contrat firstcontrat.sol tu vois une mauvaise manière de procéder et dans value.sol la bonne manière.
 
 Dans un premier temps tu déclares le smart contrat et ça version de langage.
 
 ```
-pragma solidity ^0.6.4;
+pragma solidity ^0.6.8;
 ```
 
- # Pragma
+ ## Pragma
 
- *pragma* est littéralement un mot clé utilisée permet d'activer certaines fonctionnalités ou vérification du compilateur sont utilisation est néssaire et dois etre présent dans tout les fichiers en .sol cependant si tu importe un fichier sont activation n'est pas obligatoire pense à vérifier s’il est présent lors de modification en local. Si jamais tu fais des modifications l'information que pragma te donne est PRIMORDIAL, il te donne la version du langage, mais également le compilateur utilisée.
+ *pragma* est littéralement un mot clé utilisée permet d'activer certaines fonctionnalités ou vérification du compilateur sont utilisation est nécessaire et dois être présent dans tous les fichiers en .sol cependant si tu importes un fichier sont activation n'est pas obligatoire pense à vérifier s’il est présent lors de modification en local. Si jamais tu fais des modifications l'information que pragma te donne est PRIMORDIAL, il te donne la version du langage, mais également le compilateur utilisé.
 
 
-Maintenant, tu nommes le smart contrat le nom du smart contrat dois être en rapport avec ça fonctionnalité. Plus ton projet va être gros plus la bonne nomination est important.
+Maintenant, tu nommes le smart contrat le nom du smart contrat dois être en rapport avec sa fonctionnalité. Plus ton projet va être gros plus la bonne nomination est important.
 
 
 ```
@@ -26,14 +26,15 @@ contrat Value {
 }
 ```
 
-Un smart contrat est une "pièce de code" qui permet d'exécuter des fonctions en API sur le web. Tous ce que tu code pour le smart contrat est visible par tout le monde et cela permet à tout le monde de se connecter au smart contrat afin qu'il utilise les diverses fonctions.
+Un smart contrat est une "pièce de code" qui permet d'exécuter des fonctions en API sur le web. Tous ce que tu codes pour le smart contrat est visible par tout le monde et cela permet à tout le monde de se connecter au smart contrat afin qu'il utilise les diverses fonctions.
 
-Dans notre smart contrat tu vas programer  le stokage d'information. Ce smart contrat ce découpe en deux point :
+Dans notre smart contrat tu vas programmer le stockage d'information. Ce smart contrat se découpe en deux point :
 
 - Stocker une valeur
 - Récupérer cette valeur
 
-Bien maintenant tu crée un stokage pour "value".
+Bien maintenant tu crées un stockage pour "value".
+
 
 ```
 pragma solidity ^0.6.4;
@@ -42,10 +43,10 @@ contrat Value {
 }
 ```
 
-La variable appellée ici est " state variable" elle permet de persité les informations dans la blockchain. A chaque requete effectuer la valeur est enregistré dans la blockchain.
+La variable appelée ici est " state variable" elle permet de persisté les informations dans la blockchain. À chaque requête effectuer la valeur est enregistré dans la blockchain.
 
 
-Maintenant pour stoker la value  tu as besoin de la fonction get():
+Maintenant pour stoker la value tu as besoin de la fonction get():
 
 ```
 pragma solidity ^0.6.4;
@@ -54,7 +55,7 @@ contrat Value {
 
     function get() {
     return value;
-}
+    }
 }
 ```
 
@@ -81,7 +82,7 @@ contrat Value {
 
     function get public view returns(string memory) {
     return value;
-    
+
     function set(string _value) public {
     value = _value;
 }
