@@ -6,7 +6,7 @@ si vous avez pas IDE utilisée https://remix.ethereum.org/ pour suivre les réal
 
 un IDE sera obligatoire des que j'utiliserais web3.js | truffle.js et ganache
 
-version de solidity 0.6.4
+ les projets sont écris en version de solidity 0.6.4. il n'y a normalement pas de diferrence majeur jusqu'a là 0.7 (pas encore sortie)
 
 # Outils
 
@@ -14,6 +14,8 @@ version de solidity 0.6.4
 - Truffle : https://github.com/trufflesuite/truffle
 - Mocha.js : https://github.com/mochajs/mocha
 - Metamask : https://metamask.io/
+
+# Cours
 
 Actuellement tu vas voir 5 partie
 
@@ -23,14 +25,16 @@ Actuellement tu vas voir 5 partie
 - 4 : Transaction et évenements 
 - 5 : Intéraction avec le smart contrat et les héritage
 
-Tu as également un exemple dans le dossier voting de ce que tu peu faire avec solidity. il s'agit d'un système de vote sous blockchain
+# Projet
 
-Crée ta blockchain avec ganache en importe le fichier truffle-config.js dedans. uene fois effectuer cette action 
+Tu as également un exemple dans le dossier voting de ce que tu peu faire avec solidity. il s'agit d'un système de vote sous blockchain.
+
+Avant toute chose crée ta blockchain avec ganache. Import le fichier truffle-config.js dedans. Une fois que tu as effectuer cette action 
 
 tu lance le projet avec :
 
 ```
 npm install 
 
-npm run start 
+npm run dev 
 ```
