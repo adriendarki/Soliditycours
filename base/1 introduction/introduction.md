@@ -42,7 +42,7 @@ contrat Value {
 }
 ```
 
-La variable appellée ici est " state variable" elle permet de persité les informations dans la blockchain. A chaque requete effectuer la valeur est en registré dans la blockchain.
+La variable appellée ici est " state variable" elle permet de persité les informations dans la blockchain. A chaque requete effectuer la valeur est enregistré dans la blockchain.
 
 
 Maintenant pour stoker la value  tu as besoin de la fonction get():
