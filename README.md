@@ -1,6 +1,6 @@
 # Cour sur  solidity
 
-ATTENTION CECI EST EN COURS DE RÉDUCTION SI VOUS VOYIEZ DES FAUTES OU DES INCOHÉRENCES CELA EST NORMAL 
+ATTENTION CECI EST EN COURS DE RÉDACTION SI VOUS VOYIEZ DES FAUTES OU DES INCOHÉRENCES CELA EST NORMAL !!
 
 si vous avez pas IDE utilisée https://remix.ethereum.org/ pour suivre les réalisation de puis votre pc
 
@@ -22,3 +22,15 @@ Actuellement tu vas voir 5 partie
 - 3 : Function visible et modification du temps
 - 4 : Transaction et évenements 
 - 5 : Intéraction avec le smart contrat et les héritage
+
+Tu as également un exemple dans le dossier voting de ce que tu peu faire avec solidity. il s'agit d'un système de vote sous blockchain
+
+Crée ta blockchain avec ganache en importe le fichier truffle-config.js dedans. uene fois effectuer cette action 
+
+tu lance le projet avec :
+
+```
+npm install 
+
+npm run start 
+```
