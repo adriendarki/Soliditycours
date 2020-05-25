@@ -63,7 +63,7 @@ Puis afin d'ajouter la visiblilité sur la blockchain tu ajoute la fontion publi
 pragma solidity ^0.6.4;
 contrat Value {
     string value; 
-    function get view returns(string memory) {
+    function get public view returns(string memory) {
     return value;
 }
 }
@@ -76,7 +76,7 @@ Cependant il nous manque une fonction ! celle de récuperation des données stoc
 pragma solidity ^0.6.4;
 contrat Value {
     string value; 
-    function get view returns(string memory) {
+    function get public view returns(string memory) {
     return value;
     function set(string _value) public {
     value = _value;
