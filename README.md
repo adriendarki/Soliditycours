@@ -1,5 +1,6 @@
 # Cour sur  solidity
 
+ATTENTION CECI EST EN COURS DE RÉDUCTION SI VOUS VOYIEZ DES FAUTES OU DES INCOHÉRENCES CELA EST NORMAL 
 
 si vous avez pas IDE utilisée https://remix.ethereum.org/ pour suivre les réalisation de puis votre pc
 
@@ -9,10 +10,10 @@ version de solidity 0.6.4
 
 # Outils
 
-ganache : https://github.com/trufflesuite/ganache
-truffle : https://github.com/trufflesuite/truffle
-mocha.js : https://github.com/mochajs/mocha
-Metamask : https://metamask.io/
+- Ganache : https://github.com/trufflesuite/ganache
+- Truffle : https://github.com/trufflesuite/truffle
+- Mocha.js : https://github.com/mochajs/mocha
+- Metamask : https://metamask.io/
 
 Actuellement tu vas voir 5 partie
 
