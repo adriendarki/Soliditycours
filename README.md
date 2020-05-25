@@ -6,7 +6,7 @@ si vous avez pas IDE utilisée https://remix.ethereum.org/ pour suivre les réal
 
 un IDE sera obligatoire des que j'utiliserais web3.js | truffle.js et ganache
 
- les projets sont écris en version de solidity 0.6.4. il n'y a normalement pas de diferrence majeur jusqu'a là 0.7 (pas encore sortie)
+ les projets sont écris en version de solidity 0.6.8. il n'y a normalement pas de diferrence majeur jusqu'a là 0.7 (pas encore sortie)
 
 # Outils
 
