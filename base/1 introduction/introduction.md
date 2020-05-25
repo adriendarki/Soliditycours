@@ -11,6 +11,11 @@ Dans un premier temps tu déclares le smart contrat et ça version de langage.
 pragma solidity ^0.6.8;
 ```
 
+Tu as également la possibilité d'englober les versions de solidity ce pendant je te conseille de ne JAMAIS dépasser un 0.X.X tu pourrais appelez des fonctions qui ne sont plus fonctionnelle.
+
+Exemple avec memory qui a était implémenté dans la version 0.5.0 de solidity mais qui ne fonctionne pas sous la version 0.4.0
+
+
  ## Pragma
 
  *pragma* est littéralement un mot clé utilisée permet d'activer certaines fonctionnalités ou vérification du compilateur sont utilisation est nécessaire et dois être présent dans tous les fichiers en .sol cependant si tu importes un fichier sont activation n'est pas obligatoire pense à vérifier s’il est présent lors de modification en local. Si jamais tu fais des modifications l'information que pragma te donne est PRIMORDIAL, il te donne la version du langage, mais également le compilateur utilisé.
@@ -72,7 +77,7 @@ contrat Value {
 }
 ```
 
-Cependant il nous manque une fonction ! celle de récuperation des données stocké
+Cependant il nous manque une fonction! Celle de récuperation des données stocké.
 
 
 ```
@@ -89,7 +94,7 @@ contrat Value {
 }
 ```
 
-tu déclare d'abord la fonction du constructeur avec le mot-clé "constructor". Cette fonction n'est exécutée qu'une seule fois, à chaque fois que le smart contrat est déployé. Elle doit également avoir la visibilité publique.
+Tu déclare d'abord la fonction du constructeur avec le mot-clé "constructor". Cette fonction n'est exécutée qu'une seule fois, à chaque fois que le smart contrat est déployé. Elle doit également avoir la visibilité publique.
 
 ```
 pragma solidity ^0.6.4;
@@ -112,4 +117,4 @@ contract Value {
 ```
 
 
-il nous reste plus que la compilation et notre code est fonctionnel !
+Il nous reste plus que la compilation et notre code fonction !
