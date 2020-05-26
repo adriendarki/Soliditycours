@@ -3,7 +3,7 @@
 
 Tu vas maintenant travailler avec de multiples smart contract. Tout d'abord, tu appelles des fonctions de smart contract à partir d'un autre smart contract. Ensuite, tu réalises héritage du comportement d'un smart contract parent dans un smart contract enfant.
 
-Tout d'abord, tu remanies le code de l'exemple précédent pour créer un smart contract à jeton qui est distinct du code de MyContrat. Il s'agira d'un pseudo jeton ERC20, qui ne contiendra pas toutes les fonctionnalités d'un vrai smart contract ERC-20. Vous pouvez consulter mon autre tutoriel qui vous montre comment faire.
+Tout d'abord, tu remanies le code de l'exemple précédent pour créer un smart contract à jeton qui est distinct du code de MyContrat. Il s'agira d'un pseudo jeton ERC20, qui ne contiendra pas toutes les fonctionnalités d'un vrai smart contract ERC-20.
 
 ```
 contract ERC20Token {
@@ -43,7 +43,7 @@ fonction buyToken() public payable {
 }
 ```
 
-Je voudrais attirer votre attention sur un point avant de poursuivre. Si vous deviez appeler la fonction buyToken() depuis votre compte personnel maintenant, vous n'auriez pas à frapper de jetons pour vous-même. Pourquoi cela ? Revoyons la fonction mint() telle qu'elle est maintenant : 
+Si tu appelles la fonction buyToken() depuis ton compte personnel tu n'auras pas frapper de jetons pour toi-même. Revoyons la fonction mint()
 
 ```
 fonction mint() public {
@@ -51,15 +51,14 @@ fonction mint() public {
 }
 ```
 
-La raison pour laquelle il ne frappera pas de jetons pour votre compte est que msg.sender fait en fait référence à l'adresse de MyContract, qui appelle la fonction depuis sa fonction buyToken()function ! Si nous voulons frapper des jetons pour notre propre compte, nous devons utiliser tx.origin pour référencer le compte qui a initié la transaction sur la chaîne de blocage
+La raison pour laquelle il ne frappera pas de jetons pour toncompte est que msg.sender fait en fait référence à l'adresse de MyContract, qui appelle la fonction depuis sa fonction buyToken() ! Si tu veux frapper des jetons pour ton propre compte, tu dois utiliser tx.origin pour référencer le compte qui a initié la transaction sur la chaîne de blocage.
 
 ```
 fonction mint() public {
     soldes [tx.origine] += 1 ;
 }
 ```
-
-Et voilà ! tu frappes des jetons d'un autre smart contrat ! tu devrais d'abord déployer le contrat intelligent token. Pour obtenir son adresse, puis l'inclure comme argument chaque fois que vous déployez le second smart contrat. 
+Et voilà ! Tu frappes des jetons d'un autre smart contrat ! Tu devrais d'abord déployer le smart contrat. Pour obtenir ton adresse, puis l'inclure comme argument chaque fois que vous déployez le second smart contrat. Voici à quoi ton code doit ressembler.
 
 ```
 contract ERC20Token {
@@ -89,7 +88,7 @@ contract MyContract {
 }
 ```
 
-Tu va voir d'autres façons de faire référence au contrat "Token Smart". tu peux utiliser une expression à un seul mensonge.
+Tu va voir d'autres façons de faire référence au contrat "Token Smart".
 
 ```
 function buyToken() public payable {
@@ -107,7 +106,7 @@ contract MyToken is ERC20Token {
 }
 
 
-Nous pouvons maintenant garder la trace du nom du jeton dans le contrat parental intelligent comme ceci :
+Nous pouvons maintenant garder la trace du nom du jeton dans le contrat parental.
 
 ```
 contract ERC20Token {
@@ -124,7 +123,7 @@ contract ERC20Token {
 }
 ```
 
-Nous pouvons passer outre le nom du jeton parent dans le constructeur de notre jeton enfant. Pendant que nous sommes ici, nous allons également créer un symbole pour le jeton enfant et le placer dans le constructeur. Je vais vous montrer comment passer outre le constructeur du contrat du jeton parent, tout en attribuant les nouvelles valeurs comme ceci :
+Nous pouvons passer outre le nom du jeton parent dans le constructeur de notre jeton enfant. Pendant que tu es ici, tu vas également créer un symbole pour le jeton enfant et le placer dans le constructeur. tu va voir comment passer outre le constructeur du contrat du jeton parent, tout en attribuant les nouvelles valeurs comme ceci :
 
 ```
 contract MyToken is ERC20Token {
@@ -169,7 +168,6 @@ Génial ! tu créé ton propre jeton personnalisé qui hérite du jeton parent !
 
 
 ```
-
 contract ERC20Token {
     string public name;
     mapping(address => uint256) public balances;
