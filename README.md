@@ -6,14 +6,14 @@ un IDE sera obligatoire des que j'utiliserais web3.js | truffle.js et ganache
 
  les projets sont écris en version de solidity 0.6.8. il n'y a normalement pas de diferrence majeur jusqu'a là 0.7 (pas encore sortie)
 
-# Outils
+## Outils
 
 - Ganache : https://github.com/trufflesuite/ganache
 - Truffle : https://github.com/trufflesuite/truffle
 - Mocha.js : https://github.com/mochajs/mocha
 - Metamask : https://metamask.io/
 
-# Cours
+## Cours
 
 Actuellement tu vas voir 5 partie
 
@@ -23,7 +23,7 @@ Actuellement tu vas voir 5 partie
 - 4 : Transaction et évenements 
 - 5 : Intéraction avec le smart contrat et les héritage
 
-# Projet
+## Projet
 
 Tu as également un exemple dans le dossier voting de ce que tu peu faire avec solidity. il s'agit d'un système de vote sous blockchain.
 
