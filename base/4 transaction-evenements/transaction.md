@@ -97,7 +97,7 @@ contract Transaction {
 
 Les evenements ! Les événements sont un moyen de faire face à l'asynchrone de la chaîne de blocage. tu peux déclarer des événements à l'intérieur de smart contrat auxquels peuvent souscrire des consommateurs externes. Ces consommateurs pourront écouter ces événements pour savoir que quelque chose s'est passé à l'intérieur du smart contrat. Nous déclarerons un événement d'achat au sommet du smart contrat.
 
-tu ajoute donc l'évenement qui déclare l'évenement d'achat. cet événement permet de savoir à chaque fois qu'un jeton est acheté. tu ajoute indexed pour crée un filtrage d'événement
+Tu ajoutes donc l'évènement qui déclare l'évènement d'achat. Cet événement permet de savoir à chaque fois qu'un jeton est acheté. Tu ajoutes indexed pour créer un filtrage d'événement.
 
 ```
 contract Transaction {
@@ -126,5 +126,5 @@ contract Transaction {
     }   
 }
 ```
-Il ne reste plus cas compilé le code est le tour est jouer ! tu peux passer à la 5 eme partie !
 
+Il ne reste plus cas compilé le code est le tour est joué ! Tu peux passer à la 5 eme partie !

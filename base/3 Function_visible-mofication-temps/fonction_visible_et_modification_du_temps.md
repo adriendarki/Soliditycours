@@ -1,7 +1,7 @@
 # Fonction visible et modification du temps 
 
 
-Parlons  des fonctions visible ! elle sont comme les fonction vpublic et internal. elle permette la logique incrémentation
+Parlons des fonctions visible ! Elles sont comme les fonctions public et internal. Elle permette la logique incrémentation.
 
 ```
 contract NameAll {
@@ -26,7 +26,7 @@ contract NameAll {
 }
 ```
 
-maintenant tu dois ajouter le public interface pour les autres comptes et pour celà tu l'integre à addPerson()
+Maintenant tu dois ajouter le public interface pour les autres comptes et pour cela tu l'intègres à addPerson()
 
 ```
 contract NameAll {
@@ -51,11 +51,11 @@ contract NameAll {
 }
 ```
 
-tu ajoute le modificateur à la fonction addPerson() de sorte que seul le propriétaire puisse l'appeler. Pendant que je suis ici, je vais vous montrer comment je formatte mon code Solidity une fois que les fonctions commencent à prendre de l'ampleur, avec beaucoup d'arguments, de modificateurs, de visibilité, etc...
+Tu ajoutes le modificateur à la fonction addPerson() de sorte que seul le propriétaire puisse l'appeler. 
 
-créer un nouveau modificateur qui utilise le temps pour illustrer un cas d'utilisation du temps dans Solidity. Nous allons créer un nouveau modificateur appelé onlyWhileOpen qui vérifiera que l'heure actuelle de la chaîne de blocs est postérieure à une heure que nous aurons spécifiée.
+Créer un nouveau modificateur qui utilise le temps pour illustrer un cas d'utilisation du temps dans Solidity. Tu crées un nouveau modificateur appelé onlyWhileOpen qui vérifiera que l'heure actuelle de la chaîne de blocs est postérieure à une heure que nous aurons spécifiée.
 
-psui stocker le startTime avec cette variable d'état en secondes, car c'est ainsi que nous exprimons les horodatages dans Solidity.
+Puis stocker le startTime avec cette variable d'état en secondes, car c'est ainsi que nous exprimons les horodatages dans Solidity.
 
 ``` 
 contract NameAll {
@@ -89,7 +89,7 @@ contract NameAll {
 }
 ```
 
-tu peux utiliser [ ce site web](http://www.unixtime.fr/) pour générer un horodatage. Maintenant, crée un modificateur pour vérifier que l'heure de départ est passée
+Tu peux utiliser [ce site web](http://www.unixtime.fr/) pour générer un horodatage. Maintenant, crée un modificateur pour vérifier que l'heure de départ est passée.
 
 ```
 contract NameAll {
@@ -126,4 +126,5 @@ contract NameAll {
     }
 }
 ```
-Parfait notre code fonctionne et ce base maintenat sur la date donnée !
+
+Parfait notre code fonctionne et se base maintenant sur la date donnée !

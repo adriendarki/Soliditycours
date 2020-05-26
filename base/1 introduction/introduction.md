@@ -77,7 +77,7 @@ contrat Value {
 }
 ```
 
-Cependant il nous manque une fonction! Celle de récuperation des données stocké.
+Cependant il te manques une fonction! Celle de récuperation des données stocké.
 
 
 ```
