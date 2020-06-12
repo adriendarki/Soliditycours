@@ -1,0 +1,5 @@
+Lexique des commande ethe à retenir :
+
+web3.eth.accounts[0] ou web3.eth.accounts est remplacer par 
+
+web3.eth.getAccounts((err, res) => { console.log(res[0]); });

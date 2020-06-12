@@ -1,4 +1,4 @@
-pragma solidity ^0.6.8;
+pragma solidity ^0.6.10;
 
 contract ERC20Token {
     string public name;
@@ -9,7 +9,7 @@ contract ERC20Token {
     }
 
     function mint() public virtual {
-        balances[tx.origin] ++;
+        balances[msg.sender] ++;
     }
 }
 

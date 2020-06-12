@@ -51,11 +51,11 @@ fonction mint() public {
 }
 ```
 
-La raison pour laquelle il ne frappera pas de jetons pour toncompte est que msg.sender fait en fait référence à l'adresse de MyContract, qui appelle la fonction depuis sa fonction buyToken() ! Si tu veux frapper des jetons pour ton propre compte, tu dois utiliser tx.origin pour référencer le compte qui a initié la transaction sur la chaîne de blocage.
+La raison pour laquelle il ne frappera pas de jetons pour toncompte est que msg.sender fait en fait référence à l'adresse de MyContract, qui appelle la fonction depuis sa fonction buyToken() ! Si tu veux frapper des jetons pour ton propre compte, tu dois utiliser msg.sender pour référencer le compte qui a initié la transaction sur la chaîne de blocage.
 
 ```
 fonction mint() public {
-    soldes [tx.origine] += 1 ;
+    soldes [msg.sender] += 1 ;
 }
 ```
 Et voilà ! Tu frappes des jetons d'un autre smart contrat ! Tu devrais d'abord déployer le smart contrat. Pour obtenir ton adresse, puis l'inclure comme argument chaque fois que vous déployez le second smart contrat. Voici à quoi ton code doit ressembler.
@@ -66,7 +66,7 @@ contract ERC20Token {
     mapping(address => uint256) public balances;
 
     function mint() public {
-        balances[tx.origin] += 1;
+        balances[msg.sender] += 1;
     }
 }
 
@@ -118,7 +118,7 @@ contract ERC20Token {
     }
 
     function mint() public {
-        balances[tx.origin] ++;
+        balances[msg.sender] ++;
     }
 }
 ```
@@ -177,7 +177,7 @@ contract ERC20Token {
     }
 
     function mint() public virtual {
-        balances[tx.origin] ++;
+        balances[msg.sender] ++;
     }
 }
 
