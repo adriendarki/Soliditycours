@@ -27,7 +27,7 @@ contract MyContract {
 Tu peux maintenant définir la valeur de l'adresse du jeton dans le constructeur de la manière.
 
 ```
-constructor(adresse payable _wallet, ERC20Token _token) public {
+constructor(adresse payable _wallet, ERC20Token _token) {
     wallet = _wallet ;
     token = _token ;
 }
@@ -75,7 +75,7 @@ contract MyContract {
 
     address payable wallet;
 
-    constructor(address payable _wallet, address _token) public {
+    constructor(address payable _wallet, address _token) {
         wallet = _wallet;
         token = _token;
     }
@@ -113,7 +113,7 @@ contract ERC20Token {
     string public name;
     mapping(address => uint256) public balances;
 
-    constructor(string memory _name) public {
+    constructor(string memory _name) {
         name = _name;
     }
 
@@ -134,7 +134,7 @@ contract MyToken is ERC20Token {
         string memory _symbol
     )
         ERC20Token(_name)
-    public {
+    {
         symbol = _symbol;
     }
 }
@@ -172,7 +172,7 @@ contract ERC20Token {
     string public name;
     mapping(address => uint256) public balances;
 
-    constructor(string memory _name) public {
+    constructor(string memory _name) {
         name = _name;
     }
 

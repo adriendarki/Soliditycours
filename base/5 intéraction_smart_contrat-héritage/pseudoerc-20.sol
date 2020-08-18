@@ -1,10 +1,10 @@
-pragma solidity ^0.6.10;
+pragma solidity ^0.7.0;
 
 contract ERC20Token {
     string public name;
     mapping(address => uint256) public balances;
 
-    constructor(string memory _name) public {
+    constructor(string memory _name) {
         name = _name;
     }
 
@@ -18,12 +18,12 @@ contract MyToken is ERC20Token {
     address[] public owners;
     uint256 public ownerCount;
 
-    constructor(
+    constructor (
         string memory _name,
         string memory _symbol
     )
         ERC20Token(_name)
-    public {
+    {
         symbol = _symbol;
     }
 

@@ -1,4 +1,4 @@
-pragma solidity ^0.6.10;
+pragma solidity ^0.7.0;
 
 contract Voting {
     struct Candidate {
@@ -17,9 +17,9 @@ contract Voting {
         uint indexed _candidateId
     );
 
-    constructor() public {
-        addCandidate("Candidate 1");
-        addCandidate("Candidate 2");
+    constructor(){
+        addCandidate("candidate 1");
+        addCandidate("candidate 2");
 
     }
 
@@ -31,9 +31,8 @@ contract Voting {
     }
 
     function vote (uint _candidateId) public {
-        require(!voters[msg.sender]);
-
-        require(_candidateId > 0 && _candidateId <= candidatesCount);
+        require(!voters[msg.sender],"Account has voted before");
+        require(_candidateId>0&&_candidateId<=candidatesCount,"Invaid candidate been voted");
 
         voters[msg.sender] = true;
 

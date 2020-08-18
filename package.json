@@ -9,6 +9,6 @@
   "author": "adriendarki",
   "license": "ISC",
   "dependencies": {
-    "solc": "^0.6.10"
+    "solc": "^0.7.0"
   }
 }

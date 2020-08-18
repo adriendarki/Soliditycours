@@ -1,8 +1,8 @@
-pragma solidity ^0.6.10;
+pragma solidity ^0.7.0;
 contract Value {
     string value;
 
-    constructor() public {
+    constructor() {
         value = "myValue";
     }
 

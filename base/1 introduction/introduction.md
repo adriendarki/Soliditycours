@@ -8,7 +8,7 @@ Dans le smart contrat firstcontrat.sol tu vois une mauvaise manière de procéde
 Dans un premier temps tu déclares le smart contrat et ça version de langage.
 
 ```
-pragma solidity ^0.6.8;
+pragma solidity ^0.7.0;
 ```
 
 Tu as également la possibilité d'englober les versions de solidity ce pendant je te conseille de ne JAMAIS dépasser un 0.X.X tu pourrais appelez des fonctions qui ne sont plus fonctionnelle.
@@ -25,7 +25,7 @@ Maintenant, tu nommes le smart contrat le nom du smart contrat dois être en rap
 
 
 ```
-pragma solidity ^0.6.10;
+pragma solidity ^0.7.0;
 contrat Value {
     //  le code est ici
 }
@@ -42,7 +42,7 @@ Bien maintenant tu crées un stockage pour "value".
 
 
 ```
-pragma solidity ^0.6.10;
+pragma solidity ^0.7.0;
 contrat Value {
     string value; 
 }
@@ -54,7 +54,7 @@ La variable appelée ici est " state variable" elle permet de persisté les info
 Maintenant pour stoker la value tu as besoin de la fonction get():
 
 ```
-pragma solidity ^0.6.10;
+pragma solidity ^0.7.0;
 contrat Value {
     string value; 
 
@@ -67,7 +67,7 @@ contrat Value {
 Puis afin d'ajouter la visiblilité sur la blockchain tu ajoute la fontion public et également "string memory" string permet d'avoir l'adttribut et memory precise que l'on souhaite garder l'information en stock
 
 ```
-pragma solidity ^0.6.10;
+pragma solidity ^0.7.0;
 contrat Value {
     string value; 
 
@@ -81,7 +81,7 @@ Cependant il te manques une fonction! Celle de récuperation des données stock�
 
 
 ```
-pragma solidity ^0.6.10;
+pragma solidity ^0.7.0;
 contrat Value {
     string value; 
 
@@ -94,14 +94,14 @@ contrat Value {
 }
 ```
 
-Tu déclare d'abord la fonction du constructeur avec le mot-clé "constructor". Cette fonction n'est exécutée qu'une seule fois, à chaque fois que le smart contrat est déployé. Elle doit également avoir la visibilité publique.
+Tu déclare d'abord la fonction du constructeur avec le mot-clé "constructor". Cette fonction n'est exécutée qu'une seule fois, à chaque fois que le smart contrat est déployé. Depuis la version 0.7.0 le contructor na plus besoin de visibilité
 
 ```
-pragma solidity ^0.6.10;
+pragma solidity ^0.7.0;
 contract Value {
     string value;
 
-    constructor() public {
+    constructor() {
         value = "myValue";
     }
 
