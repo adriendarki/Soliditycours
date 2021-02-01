@@ -8,7 +8,7 @@ Dans le smart contrat firstcontrat.sol tu vois une mauvaise manière de procéde
 Dans un premier temps tu déclares le smart contrat et ça version de langage.
 
 ```
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.1;
 ```
 
 Tu as également la possibilité d'englober les versions de solidity ce pendant je te conseille de ne JAMAIS dépasser un 0.X.X tu pourrais appelez des fonctions qui ne sont plus fonctionnelle.

@@ -1,6 +1,6 @@
 {
   "name": "soliditycours",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "apprendre à coder en solidity",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,6 @@
   "author": "adriendarki",
   "license": "ISC",
   "dependencies": {
-    "solc": "^0.7.0"
+    "solc": "^0.8.1"
   }
 }

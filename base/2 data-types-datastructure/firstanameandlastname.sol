@@ -1,4 +1,4 @@
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.1;
 
 contract NameAll {
     uint256  public peopleCount = 0;

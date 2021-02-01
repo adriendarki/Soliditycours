@@ -4,7 +4,7 @@ Dans un premier temps tu vas de nouveau ajouter le pragma
 
 
 ```
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.1;
 ```
 
 Sans oublier la nomination du smart contrat dans ce cas on va appelée NameAll.
