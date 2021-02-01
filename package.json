@@ -9,6 +9,7 @@
   "author": "adriendarki",
   "license": "ISC",
   "dependencies": {
-    "solc": "^0.8.1"
+    "solc": "^0.8.1",
+    "truffle": "^5.1.64"
   }
 }

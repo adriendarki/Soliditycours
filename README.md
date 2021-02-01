@@ -4,7 +4,7 @@ si vous avez pas IDE utilisée https://remix.ethereum.org/ pour suivre les réal
 
 un IDE sera obligatoire des que j'utiliserais web3.js | truffle.js et ganache
 
- les projets sont écris en version de solidity 0.7.0
+ les projets sont écris en version de solidity 0.8.1
 
 ## Outils
 
@@ -39,7 +39,7 @@ npm run dev
 
 
 Si cela vous a aidé dans votre compréhension de solidity vous pouvez me soutenir à ces adresses
-ethereum : 0xf43c76170EAc81fC56c59D36f2f247e64930D6F9
 
+ethereum : 0xf43c76170EAc81fC56c59D36f2f247e64930D6F9
 
  tron : TNZtMMKUhYfzeY4BzJmDVtCi3gwVE2dHxR
