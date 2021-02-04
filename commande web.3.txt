@@ -1,4 +1,4 @@
-Lexique des commande ethe à retenir :
+Lexique des commande eth à retenir :
 
 web3.eth.accounts[0] ou web3.eth.accounts est remplacer par 
 
